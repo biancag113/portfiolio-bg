@@ -16,7 +16,7 @@ function App() {
         <h5>
           Full-stack developer. Designer. Coffee Addict.
         </h5>
-          <button id='login'>Log In</button>
+          <button id='login'>Client Log In</button>
       </header>
       <div>
       <nav id='nav'>
