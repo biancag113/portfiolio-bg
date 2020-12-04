@@ -65,7 +65,7 @@ h5 {
   position: fixed;
   right: 10%;
   left: 10%;
-  top: 33%;
+  top: 30%;
 }
 
 #nav-button {
@@ -90,7 +90,7 @@ h5 {
   background-color: rgb(245, 161, 51);
   color: #282c34;
   position: fixed;
-  left: 75%;
+  left: 80%;
   top: 5%;
   border-style: solid;
   border-width: 1px;
@@ -104,4 +104,11 @@ h5 {
   color: rgb(245, 161, 51);
 }
 
-
+h6 {
+  color: white;
+  font-size: 10px;
+  position: fixed;
+  right: 10%;
+  left: 10%;
+  top: 87%
+}
