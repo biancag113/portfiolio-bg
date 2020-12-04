@@ -1,28 +1,40 @@
-import logo from './logo.svg';
-import './Auth.css';
+import './App.css';
 import Amplify from 'aws-amplify';
 import React from 'react';
 import awsconfig from './aws-exports';
-import {AmplifySignOut, withAuthenticator} from '@aws-amplify/ui-react';
+import {AmplifySignIn} from '@aws-amplify/ui-react';
 
 Amplify.configure(awsconfig)
 
-function Auth() {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div id='signout'>
-        <AmplifySignOut />
-        </div>
-        <h3>
-        Client Dashboard        
-        </h3>
+        <h1>
+          <span id='hi'>Hi.</span> I'm Bianca :)
+        </h1>
+        <h5>
+          Full-stack developer. Designer. Coffee Addict.
+        </h5>
+          <button id='login'>Log In</button>
       </header>
-      <body>
+      <div>
+      <nav id='nav'>
+        <button id='nav-button'>About</button>
+        <button id='nav-button'>Projects</button>
+        <button id='nav-button'>Videos</button>
+        <button id='nav-button'>Contact</button>
+      </nav>
+      </div>
+      <div id='signin'>
+      </div>
+      <div id='footer'>
+        © 2020, Bianca Gonzalez
+        <p>San Francisco, CA</p>
+      </div>
 
-      </body>
-    </div>
+  </div>
   );
 }
 
-export default withAuthenticator(Auth);
+export default App;

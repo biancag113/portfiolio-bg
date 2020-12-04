@@ -48,6 +48,12 @@
     right: 80%;
     bottom: 80%
   }
+
+  #footer {
+    font-size: 4px;
+    position: fixed;
+    bottom: 2px
+  }
   
   
   

@@ -1,34 +1,28 @@
 import logo from './logo.svg';
-import './App.css';
+import './Auth.css';
 import Amplify from 'aws-amplify';
 import React from 'react';
 import awsconfig from './aws-exports';
-import {AmplifySignIn} from '@aws-amplify/ui-react';
+import {AmplifySignOut, withAuthenticator} from '@aws-amplify/ui-react';
 
 Amplify.configure(awsconfig)
 
-function App() {
+function Auth() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>
-          <span id='hi'>Hi.</span> I'm Bianca :)
-        </h1>
-        <h5>
-          Full-stack developer. Designer. Coffee Addict.
-        </h5>
-          <button id='login'>Log In</button>
+        <div id='signout'>
+        <AmplifySignOut />
+        </div>
+        <h3>
+        Client Dashboard        
+        </h3>
       </header>
-      <div>
-      <nav id='nav'>
-        <button id='nav-button'>About</button>
-        <button id='nav-button'>Projects</button>
-        <button id='nav-button'>Videos</button>
-        <button id='nav-button'>Contact</button>
-      </nav>
-      </div>
-  </div>
+      <body>
+
+      </body>
+    </div>
   );
 }
 
-export default App;
+export default withAuthenticator(Auth);
