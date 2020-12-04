@@ -30,7 +30,7 @@ function App() {
       </div>
       <div id='footer'>
         © 2020, Bianca Gonzalez
-        <p>San Francisco, CA</p>
+        <p>San Francisco  |  Los Angeles</p>
       </div>
 
   </div>
