@@ -1,9 +1,9 @@
-About Me
+About Me.
 
-Portfolio Projects
+Portfolio Projects.
 
-Videos
+Videos.
 
-Blog
+Blog.
 
-Contact
+Contact.
